@@ -1,9 +1,9 @@
 import requests
-import cases
-import active
-import lockdown
-import trend
-from writingJson import writingJsonFile
+import modules.cases as cases
+import modules.active as active
+import modules.lockdown as lockdown
+import modules.trend as trend
+from modules.writingJson import writingJsonFile
 import json
 
 url = requests.get ("https://api.covid19api.com/live/country/barbados/status/confirmed")
