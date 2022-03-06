@@ -1,10 +1,12 @@
 import requests
+from modules.bucket import create_bucket, upload_file
 import modules.cases as cases
 import modules.active as active
 import modules.lockdown as lockdown
 import modules.trend as trend
 from modules.writingJson import writingJsonFile
 import json
+
 
 url = requests.get ("https://api.covid19api.com/live/country/barbados/status/confirmed")
 response = url.json()
